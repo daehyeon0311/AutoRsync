@@ -29,7 +29,7 @@ print_header() {
 print_footer() {
     echo -e "${C_CYAN}"
     echo "╔═══════════════════════════════════════════════════════════════════════╗"
-    echo "║ ✅  Upload completed successfully.                                    ║"
+    echo "║                    ✅  Upload completed successfully.                  ║"
     echo "╚═══════════════════════════════════════════════════════════════════════╝"
     echo -e "${C_RESET}"
 }
