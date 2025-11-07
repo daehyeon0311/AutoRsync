@@ -91,13 +91,6 @@ while true; do
     $fcnROI
     STATUS=$?
 
-    if [ $STATUS -eq 0 ]; then
-        echo -e "\n${C_GREEN}✅ Rsync completed successfully.${C_RESET}"
-    else
-        echo -e "\n${C_RED}⚠️  Rsync encountered an error (exit code $STATUS).${C_RESET}"
-        echo "$(date): Rsync failed (mode=$mode, exit=$STATUS)" >> ~/rsync_error.log
-    fi
-
     print_footer
     echo
     read -p "🔁 Run again? (y/n): " again
@@ -105,4 +98,3 @@ while true; do
 done
 
 echo -e "${C_GREEN}🏁 Script terminated.${C_RESET}\n"
-
